@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_miactivity_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFAEB">
+
+
+    <!-- Setting buttons -->
+    <RelativeLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <!-- Report button -->
+        <Button
+            android:id="@+id/bt_miactivity_share"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="57dp"
+            android:layout_toLeftOf="@+id/bt_miactivity_download"
+            android:background="@drawable/share"
+            android:text="Share" />
+
+        <Button
+            android:id="@+id/bt_miactivity_complete"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/bt_miactivity_planSetting"
+            android:background="@drawable/sock"
+            android:text="Report" />
+
+        <!-- Download screenshot button -->
+        <Button
+            android:id="@+id/bt_miactivity_download"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="289dp"
+            android:layout_toLeftOf="@+id/bt_miactivity_complete"
+            android:background="@drawable/download"
+            android:text="screen shot" />
+
+        <!-- Plan setting button -->
+        <Button
+            android:id="@+id/bt_miactivity_planSetting"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10px"
+            android:layout_marginTop="10px"
+            android:layout_marginEnd="10px"
+            android:layout_marginBottom="10px"
+            android:background="@drawable/man"
+            android:text="Setting" />
+
+    </RelativeLayout>
+
+    <!-- Plan type -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0px"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="365-day plan"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- Plan name -->
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:background="@drawable/title" />
+
+
+        <TextView
+            android:id="@+id/tv_miactivity_planname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Light up the love!"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:background="@drawable/title" />
+
+    </LinearLayout>
+
+
+
+    <!-- Start time and end time -->
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_gravity="center"
+                android:layout_marginRight="10px"
+                android:background="@drawable/plan" />
+
+            <TextView
+                android:id="@+id/tv_miactivity_startdate"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:gravity="center"
+                android:text="Start Time  2021-10-16"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- End time -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginRight="10px"
+                android:layout_gravity="center"
+                android:background="@drawable/plan" />
+
+            <TextView
+                android:id="@+id/tv_miactivity_enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:gravity="center"
+                android:text="End Time  2025-10-15"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <!-- Total target amount of the plan -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/pig" />
+
+
+            <TextView
+                android:id="@+id/tv_miactivity_plantarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="0px"
+                android:text="Target  ￡66795.0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- A line -->
+    <LinearLayout
+        android:id="@+id/Line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#969696"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <!-- Heart area -->
+    <LinearLayout
+        android:id="@+id/LinearLayoutHeart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <!-- Punchable heart body -->
+        <GridLayout
+            android:id="@+id/GridLayout_miactivity_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="25"
+            android:orientation="horizontal"
+            android:rowCount="22">
+        </GridLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_miactivity_finalheart"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:background="@drawable/heart" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:orientation="vertical">
+
+        <!-- Progress bar-->
+        <!-- Learnt from tutorial. URL:https://www.jianshu.com/p/f613571addb5-->
+        <ProgressBar
+            android:id="@+id/pb_miactivity_plannningsituation"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar_bg"
+            />
+
+        <!-- Text below the plan progress bar -->
+        <LinearLayout
+            android:id="@+id/progressbarText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_miactivity_plannningsituation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Completed"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_miactivity_plannningsituation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="No data"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,396 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFAEB"
+    >
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#FFFAEB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/bt_plansettingactivity_back"
+            android:layout_width="100px"
+            android:layout_height="80px"
+            android:layout_weight="0"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Settings"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left|center"
+            android:text="Plan Type"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <!-- Play type buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_plansettingactivity_plantype1"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:padding="5dp"
+            android:text="365-day"
+            android:textAlignment="center"
+            android:layout_marginRight="20dp"/>
+        <Button
+            android:id="@+id/bt_plansettingactivity_plantype2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:padding="5dp"
+            android:text="52-week"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Plan name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Plan Name"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- Input box for plan name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_plansettingactivity_planname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:hint="Please enter the name of the scheme in up to 15 characters"
+            android:maxLength="15"
+            android:padding="5dp"
+            android:text="Unname"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Color choosing -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- Color Picker -->
+        <top.defaults.colorpicker.ColorPickerView
+            android:id="@+id/colorPicker"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:enableAlpha="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- Colour preview -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/bt_backgroundcolor"
+                android:orientation="horizontal"
+                android:background="#FA7171"></LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_backgroundcolor"
+                android:text="0x7F313C93"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Start time-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Start time"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- Input box for start time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_plansettingactivity_startdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:hint="Please enter the start date in the format yyyy-mm-dd"
+            android:maxLength="11"
+            android:padding="5dp"
+            android:text="2021.10.26"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Start amount -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Start Amount"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- Input box for start amount -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_plansettingactivity_satrtmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:background="@drawable/shape_edittext"
+            android:hint="Please enter the start amount，[1,999]"
+            android:inputType="number"
+            android:maxLength="3"
+            android:padding="5dp"
+            android:text="1"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_horizontal|center"
+            android:text="$"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!-- Amount interval -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Amoount Interval ("
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <!-- Input box for amount interval -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_plansettingactivity_moneyinterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:background="@drawable/shape_edittext"
+            android:hint="Please enter the amount interval，[0,999]"
+            android:inputType="number"
+            android:maxLength="3"
+            android:padding="5dp"
+            android:text="1"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_horizontal|center"
+            android:text="$"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Reminder  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Reminder"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- Reminder button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_plansettingactivity_isremind"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_edittext"
+            android:text="No reminder"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Submit button -->
+    <Button
+        android:backgroundTint="#FFFAEB"
+        android:id="@+id/bt_plansettingactivity_complete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"
+        android:textColor="#603813"
+        android:gravity="center"
+        />
+</LinearLayout>

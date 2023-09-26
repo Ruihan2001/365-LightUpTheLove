@@ -1,0 +1,372 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="#FFFAEB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <!-- Back button-->
+        <Button
+            android:id="@+id/bt_remindsettingactivity_back"
+            android:layout_width="100px"
+            android:layout_height="80px"
+            android:layout_weight="0"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Reminder settings"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- Remainder frequency -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:gravity="left|center"
+            android:text="Frequency of reminder"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- No remainder option -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical|center"
+            android:text="No reminder"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_no_remind"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selected" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#969696"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+    <!-- Daily reminder option -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical|center"
+            android:text="Daily reminder"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remind"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/nonseleted" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#969696"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+    <!-- Title of reminder time-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:gravity="left|center"
+            android:text="Reminder Time"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Edit text of reminder time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_remindsettingactivity_remindtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:maxLength="5"
+            android:padding="5dp"
+            android:hint="Please enter the time format XX:XX"
+            android:text="18:00"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Title of reminder content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Reminder Content"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Edit text of reminder time-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_edittext_big"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_remindsettingactivity_remindcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:maxLength="60"
+            android:text="It's your time to save, so come and record your savings!"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Cue sound"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- Sound button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remindsound1"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_remindactivity_remindsoundbutton"
+            android:text="WAVE"
+            />
+
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remindsound2"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_remindactivity_remindsoundbutton"
+            android:text="money"
+             />
+
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remindsound3"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_remindactivity_remindsoundbutton"
+            android:text="Spring"
+             />
+
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remindsound4"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_remindactivity_remindsoundbutton"
+            android:text="award"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remindsound5"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_remindactivity_remindsoundbutton"
+            android:text="FACEBOOK"
+             />
+
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remindsound6"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_remindactivity_remindsoundbutton"
+            android:text="Alarm bell"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remindsound7"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_remindactivity_remindsoundbutton"
+            android:text="Pager"
+             />
+
+        <Button
+            android:id="@+id/bt_remindsettingactivity_remindsound8"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_remindactivity_remindsoundbutton"
+            android:text="Elevator"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_remindsettingactivity_complete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFAEB"
+        android:textColor="#603813"
+        android:text="Submit"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
